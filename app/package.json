@@ -1,0 +1,46 @@
+{
+    "name": "helloworld",
+    "displayName": "HelloCordova",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "index.js",
+    "scripts": {
+        "install": "cordova prepare",
+        "build": "webpack",
+        "build:android": "npm run build && cordova build android",
+        "build:ios": "npm run build && cordova build ios",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@aerogear/app": "latest",
+        "@aerogear/auth": "latest",
+        "@aerogear/cordova-plugin-aerogear-metrics": "latest",
+        "@aerogear/cordova-plugin-aerogear-push": "latest",
+        "@aerogear/cordova-plugin-aerogear-security": "latest",
+        "@aerogear/cordova-plugin-aerogear-sync": "latest",
+        "@aerogear/push": "latest",
+        "@aerogear/security": "latest",
+        "@aerogear/voyager-client": "latest",
+        "cordova": "8.1.2",
+        "cordova-android": "7.1.4",
+        "cordova-ios": "4.5.5",
+        "webpack": "4.33.0",
+        "webpack-cli": "3.3.2"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-aerogear-metrics": {},
+            "cordova-plugin-aerogear-push": {},
+            "cordova-plugin-aerogear-security": {},
+            "cordova-plugin-aerogear-sync": {},
+            "cordova-plugin-inappbrowser": {},
+            "cordova-plugin-whitelist": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    }
+}

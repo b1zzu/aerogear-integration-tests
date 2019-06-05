@@ -15,18 +15,19 @@ cp fixtures/google-services.json testing-app/
 cd testing-app
 
 npm install --save \
-  @aerogear/security \
-  @aerogear/app \
-  @aerogear/auth \
-  @aerogear/voyager-client \
-  @aerogear/push \
+  @aerogear/security@latest \
+  @aerogear/app@latest \
+  @aerogear/auth@latest \
+  @aerogear/voyager-client@latest \
+  @aerogear/push@latest \
   webpack \
   webpack-cli
 
-cordova plugin add @aerogear/cordova-plugin-aerogear-metrics
-cordova plugin add @aerogear/cordova-plugin-aerogear-push
-cordova plugin add @aerogear/cordova-plugin-aerogear-security
-cordova plugin add @aerogear/cordova-plugin-aerogear-sync
+cordova plugin add \
+  @aerogear/cordova-plugin-aerogear-metrics \
+  @aerogear/cordova-plugin-aerogear-push \
+  @aerogear/cordova-plugin-aerogear-security \
+  @aerogear/cordova-plugin-aerogear-sync 
 cordova plugin add cordova-plugin-inappbrowser
 
 npx webpack
